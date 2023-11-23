@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2944515632239466653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6272470471966094478}
+  - component: {fileID: 656794418962474373}
+  - component: {fileID: 7303699746350162457}
+  m_Layer: 0
+  m_Name: ColliderPC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6272470471966094478
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2944515632239466653}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.01, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2214608880276135350}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &656794418962474373
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2944515632239466653}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.6385193, y: 1.8327289, z: 2.5047607}
+  m_Center: {x: 0.31925964, y: 0.41636443, z: 0.15631104}
+--- !u!114 &7303699746350162457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2944515632239466653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 230b827313c1e39448a27a7fd6df8d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pantallaPC: {fileID: 0}
+  entrigger: 0
+  TextPcEncendido: {fileID: 0}
+  TextArduino: {fileID: 0}
+  TextChip: {fileID: 0}
+  TextNecesitoChip: {fileID: 0}
+  hand: {fileID: 0}
+  inventorySystem: {fileID: 0}
+  inventoryItemDataChip: {fileID: 11400000, guid: 6a6253701df91ef40994bc9ecc72e975, type: 2}
+  inventoryItemDataArduino: {fileID: 11400000, guid: 4eec60b083328e04193718659a431ba0, type: 2}
+  ArduinoMapa: {fileID: 0}
+  ChipMapa: {fileID: 0}
+  arduinoPuesto: 0
+  chipPuesto: 0
+  arduinoEnMano: 0
+  pass: {fileID: 4170682175544282330}
+  TextRecogerChip: {fileID: 0}
+  ChipBueno: {fileID: 0}
+  TextAccederPC: {fileID: 0}
+  Boton: {fileID: 0}
+--- !u!1 &6295179814146625705
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2214608880276135350}
+  - component: {fileID: 4170682175544282330}
+  m_Layer: 0
+  m_Name: PCManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2214608880276135350
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6295179814146625705}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 398.32254, y: 1.8798895, z: 503.39206}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6272470471966094478}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4170682175544282330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6295179814146625705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e32fd61cf9a6edf409ad1dde9b4724f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  passwordInputField: {fileID: 0}
+  correctPassword: 1234
+  correcta: 0
+  textoContraCorrect: {fileID: 0}
+  textoContraIncorrect: {fileID: 0}
+  pcPantallaScript: {fileID: 2944515632239466653}
+  AnimacionCargar: {fileID: 0}
+  PantallaLogin: {fileID: 0}
+  ordenador: {fileID: 0}
+  Escritorio: {fileID: 0}
+  videoHack: {fileID: 0}
+  botonBlock: {fileID: 0}
+  botonDesblock: {fileID: 0}
+  FiltroColor: {fileID: 0}
+  FiltroApp: {fileID: 0}
